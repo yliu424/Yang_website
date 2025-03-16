@@ -170,6 +170,13 @@ footer {
     text-align: left;
 }
 
+.project-description {
+    flex: 2;
+    max-width: 60%;
+    line-height: 1.8;
+    text-align: justify;
+}
+
 .project-description img {
     width: 100%;
     max-width: 600px; /* Adjust the maximum width */
