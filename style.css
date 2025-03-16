@@ -112,29 +112,29 @@ nav ul li a {
     color: #000E54;
 }
 
-/* Portfolio Gallery Layout */
 .portfolio-gallery {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px; /* Adjust the space between items */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: flex-start; /* Align items at the top */
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-/* Portfolio Item */
 .portfolio-item {
     text-align: center;
-    max-width: 400px; /* Adjust width as needed */
-    flex: 1; /* Makes sure both items take equal space */
+    max-width: 400px; /* Ensure both items have the same width */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Ensure Images are the Same Height */
 .portfolio-item img {
     width: 100%;
-    max-width: 350px; /* Ensures uniform image size */
-    height: 250px; /* Set a fixed height for consistency */
-    object-fit: cover; /* Ensures images are cropped properly */
-    border-radius: 10px; /* Keep rounded corners */
+    max-width: 350px;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures uniform cropping */
+    border-radius: 10px;
 }
 
 /* Contact Section */
