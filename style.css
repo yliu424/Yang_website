@@ -196,9 +196,72 @@ footer {
     margin: 20px 0;
 }
 
-@media (max-width: 768px) {
+/* Mobile & Tablet Responsive Layout */
+@media (max-width: 1024px) {
+  .page-container,
+  .project-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sidebar,
+  .project-meta {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-content,
+  .project-description {
+    padding-left: 0;
+  }
+
+  .portfolio-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
   body {
-    background-image: none;
-    background-color: #ffffff;
+    background-size: 100% auto;
+    background-position: top left;
+    background-attachment: scroll;
   }
 }
+
+/* Small Screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main-content h2,
+  .project-description h2 {
+    font-size: 20px;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .project-meta h2,
+  .project-meta h3,
+  .sidebar h1 {
+    font-size: 20px;
+  }
+}
+
