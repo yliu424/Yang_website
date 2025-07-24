@@ -1,95 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yang Liu - Instructional Designer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yang Liu</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="page-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="photo.jpg" alt="Yang Liu" class="profile-pic"/>
+        <h1 class="name">Yang Liu</h1>
+        <p class="title">Instructional Designer & Learning Experience Researcher</p>
 
-<!-- Navigation -->
-<header>
-    <div class="container">
-        <nav>
-            <h1>Yang Liu</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="phd_portfolio.html" target="_blank">Ph.D. Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-container">
-        <div class="hero-image">
-            <img src="photo.jpg" alt="Yang Liu">
-        </div>
-        <div class="hero-text">
-            <h2>Hi, I'm <strong>Yang Liu</strong></h2>
-            <p>
-                I’m an <strong>Instructional Designer</strong> and <strong>Learning Experience Researcher</strong> passionate about creating inclusive, learner-centered, and technology-enhanced educational experiences. With expertise in learning theories, instructional design models (ADDIE, SAM), and learning technologies (Canvas, Articulate, Captivate), I specialize in designing interactive, media-rich online courses that promote engagement and accessibility.
+        <div class="contact">
+            <p><strong>Email:</strong><br> <a href="mailto:yliu424@syr.edu">yliu424@syr.edu</a></p>
+            <p><strong>LinkedIn:</strong><br>
+                <a href="https://www.linkedin.com/in/yang-liu-88b47346/" target="_blank">
+                    linkedin.com/in/yang-liu-88b47346/
+                </a>
             </p>
-            <p>
-                I thrive in collaborative, cross-functional teams, applying best practices in course design, digital accessibility, and active learning to drive meaningful outcomes. With extensive experience in higher education, I create engaging and effective learning environments by leveraging emerging technologies to enhance teaching and learning for diverse learners.
-            </p>
-            <a href="#portfolio" class="btn">See My Work</a>
-            <a href="phd_portfolio.html" class="btn" target="_blank">Training Received</a>
+            <p><strong>CV:</strong><br> <a href="CV_YangLiu.pdf" target="_blank">Download PDF</a></p>
         </div>
-    </div>
-</section>
+    </aside>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-    <div class="container">
-        <h2>Portfolio</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item">
-                <a href="project_1.html" target="_blank">
-                    <img src="project_1.png" alt="Project 1">
-                    <h3>Knowledge Base of Learning Theory and Instructional Design Theory</h3>
-                </a>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Bio Section -->
+        <section class="bio">
+            <h2>About</h2>
+            <p>I am an <strong>Instructional Designer</strong> and <strong>Learning Experience Researcher</strong> passionate about designing inclusive, technology-enhanced learning environments. My work bridges learning theory, instructional design, and emerging technologies like AI, AR/VR, and digital accessibility. I bring expertise in course design, multimedia development, and evaluation methods, especially in higher education and faculty development contexts.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <a href="project_1.html" target="_blank">
+                        <img src="project_1.png" alt="Project 1"/>
+                        <h3>Knowledge Base of Learning Theory and Instructional Design Theory</h3>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="project_2.html" target="_blank">
+                        <img src="project_2.png" alt="Project 2"/>
+                        <h3>Immersive Technologies for Educators</h3>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="project_3.html" target="_blank">
+                        <img src="project_3.png" alt="Project 3"/>
+                        <h3>Creating Accessible Electronic Materials With AI Tools</h3>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="project_2.html" target="_blank">
-                    <img src="project_2.png" alt="Project 2">
-                    <h3>Immersive Technologies for Educators</h3>
-                </a>
-            </div>
-<!--             <div class="portfolio-item">
-                <a href="project_3.html">
-                    <img src="project_3.jpg" alt="Project 3">
-                </a>
-                <h3>Project Title 3</h3>
-            </div>
-            <div class="portfolio-item">
-                <a href="project4.html">
-                    <img src="project4.jpg" alt="Project 4">
-                </a>
-                <h3>Project Title 4</h3>
-            </div> -->
-        </div>
-    </div>
-</section>
+        </section>
 
+        <!-- Training Section -->
+        <section class="section">
+            <h2>Ph.D. Training</h2>
+            <p>Ph.D. in Instructional Design, Development, and Evaluation<br/>
+                Syracuse University</p>
+            <p><a href="phd_portfolio.html" target="_blank">View full training portfolio</a></p>
+        </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Get in Touch</h2>
-        <p>Email: yliu424@syr.edu</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yang-liu-88b47346/" target="_blank">https://www.linkedin.com/in/yang-liu-88b47346/</a></p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Yang Liu. All Rights Reserved.</p>
-</footer>
-
+        <footer>
+            <p>© 2025 Yang Liu. All Rights Reserved.</p>
+        </footer>
+    </main>
+</div>
 </body>
 </html>

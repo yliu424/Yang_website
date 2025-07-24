@@ -1,196 +1,197 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset & Base */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #FFFFFF;
-    color: #000E54;
 }
 
-.container {
-    width: 80%;
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-color: #ffffff; /* 确保文本可读 */
+    color: #222;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+.page-container {
+    display: flex;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    padding-right: 40px;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0;
     text-align: center;
 }
 
-/* Navigation */
-header {
-    background: #000E54;
-    padding: 20px 0;
-    color: #FFFFFF;
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
+.name {
+    font-size: 28px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
-    background: #ffe5d9;
-    color: #FFFFFF;
+.title {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
 }
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    width: 90%;
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.hero-image {
-    flex: 1;
-    max-width: 350px;
-    text-align: center;
+.contact a {
+    word-break: break-word;
+    font-size: 16px;
 }
 
-.hero-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hero-text {
-    flex: 2;
-    text-align: left;
+/* Main Content */
+.main-content {
+    flex-grow: 1;
     padding-left: 40px;
 }
 
-.hero-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #13315c;
-}
-
-.hero-text p {
-    font-size: 18px;
+/* Section Titles */
+.main-content h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
     margin-bottom: 20px;
-    color: #13315c;
-    line-height: 1.8;
-    text-align: justify;
 }
 
-.hero-text .btn {
-    background: #000E54;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    display: inline-block;
+.main-content p {
+    font-size: 17px;
+    margin-bottom: 20px;
 }
 
-/* Portfolio Section */
-#portfolio {
-    background: #f4f4f4;
-    padding: 60px 0;
-}
-
-#portfolio h2 {
-    color: #000E54;
-}
-
+/* Portfolio Gallery */
 .portfolio-gallery {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items at the top */
-    gap: 50px;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .portfolio-item {
+    max-width: 300px;
     text-align: center;
-    max-width: 400px; /* Ensure both items have the same width */
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .portfolio-item img {
     width: 100%;
-    max-width: 350px;
-    height: 250px; /* Set a fixed height */
-    object-fit: cover; /* Ensures uniform cropping */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
 }
 
-/* Contact Section */
-#contact {
-    background: #ffe5d9;
-    padding: 60px 0;
-}
-
-#contact h2 {
-    color: #13315c;
+.portfolio-item h3 {
+    font-size: 18px;
+    color: #111;
 }
 
 /* Footer */
 footer {
-    background: #FFFFFF;
-    color: #7a7a7a;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #dcdcdc;
+    font-size: 15px;
+    color: #888;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #ccc;
 }
 
-.project-layout {
+/* Two-column project layout */
+.project-container {
     display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
     gap: 40px;
-    align-items: flex-start;
 }
 
 .project-meta {
-    flex: 1;
-    max-width: 40%;
-    text-align: left;
+    width: 300px;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+    padding-right: 30px;
+}
+
+.project-meta h2,
+.project-meta h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.project-meta p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #333;
 }
 
 .project-description {
-    flex: 2;
-    max-width: 60%;
-    line-height: 1.8;
-    text-align: justify;
+    flex-grow: 1;
 }
 
-.project-description img {
-    width: 100%;
-    max-width: 600px; /* Adjust the maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 20px auto; /* Center align the images */
-    border-radius: 10px; /* Optional: Add rounded corners */
+.project-description h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
 }
 
-/* 确保 Vimeo 视频响应式 */
+.project-description h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-description p,
+.project-description li {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.project-description ul {
+    padding-left: 20px;
+}
+
+.project-description img,
 .project-description iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
+    max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
 }
